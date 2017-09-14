@@ -21,6 +21,18 @@ struct AccountModel {
     let isVisible: Bool
     let iban: String
     
+    init(accountBalanceInCents: Int, accountCurrency: String, accountId: Int, accountName: String, accountNumber: Int, accountType: String, alias: String, isVisible: Bool, iban: String) {
+        self.accountBalanceInCents = accountBalanceInCents
+        self.accountCurrency = accountCurrency
+        self.accountId = accountId
+        self.accountName = accountName
+        self.accountNumber = accountNumber
+        self.accountType = accountType
+        self.alias = alias
+        self.isVisible = isVisible
+        self.iban = iban
+    }
+    
     init?(json: JsonObject) {
         guard let accountBalanceInCents = json["accountBalanceInCents"] as? Int else {
             return nil
