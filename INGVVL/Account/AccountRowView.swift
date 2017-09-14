@@ -18,14 +18,14 @@ class AccountRowView: UIView {
     
     var name: UILabel = {
         let lb = UILabel(frame: .zero)
-        lb.textColor = UIColor.white
+        lb.textColor = ColorPalette.clean
         return lb
     }()
     
     var bio: UILabel = {
         let lb = UILabel(frame: .zero)
         lb.numberOfLines = 0
-        lb.textColor = UIColor.white
+        lb.textColor = ColorPalette.clean
         return lb
     }()
     

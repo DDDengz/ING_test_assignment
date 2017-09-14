@@ -10,6 +10,9 @@
 		02B0C8A72120A526C4577FF9 /* Pods_INGVVL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */; };
 		042793D2EB16F8AA2703F251 /* Pods_INGVVLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */; };
 		3EB8DF971F6B0C6A00058E6E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */; };
+		3EB8DF9A1F6B122400058E6E /* AppearanceProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */; };
+		3EB8DF9C1F6B125900058E6E /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */; };
+		3EB8DF9E1F6B127600058E6E /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF9D1F6B127600058E6E /* AccountsViewController.swift */; };
 		3EF7979E1F6A8F1700A70DE2 /* MyDelegateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7979D1F6A8F1700A70DE2 /* MyDelegateDatasource.swift */; };
 		3EF797A11F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */; };
 		3EF797A41F6A95B500A70DE2 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF797A31F6A95B500A70DE2 /* mock.json */; };
@@ -24,7 +27,6 @@
 		3EF797BC1F6AB61800A70DE2 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797BB1F6AB61800A70DE2 /* ViewConfiguration.swift */; };
 		3EF797BE1F6AC80900A70DE2 /* AccountsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797BD1F6AC80900A70DE2 /* AccountsContainerView.swift */; };
 		C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */; };
-		C99A2DA71F699BEF002E0C6C /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA61F699BEF002E0C6C /* AccountsViewController.swift */; };
 		C99A2DAC1F699BEF002E0C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DAB1F699BEF002E0C6C /* Assets.xcassets */; };
 		C99A2DAF1F699BEF002E0C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DAD1F699BEF002E0C6C /* LaunchScreen.storyboard */; };
 		C99A2DBA1F699BEF002E0C6C /* INGVVLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DB91F699BEF002E0C6C /* INGVVLTests.swift */; };
@@ -48,6 +50,9 @@
 		3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.debug.xcconfig"; sourceTree = "<group>"; };
 		3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseModel.swift; path = Account/ResponseModel.swift; sourceTree = "<group>"; };
+		3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppearanceProxyHelper.swift; path = Appearance/AppearanceProxyHelper.swift; sourceTree = "<group>"; };
+		3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPallete.swift; path = Appearance/ColorPallete.swift; sourceTree = "<group>"; };
+		3EB8DF9D1F6B127600058E6E /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsViewController.swift; path = Account/AccountsViewController.swift; sourceTree = "<group>"; };
 		3EF7979D1F6A8F1700A70DE2 /* MyDelegateDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasource.swift; sourceTree = "<group>"; };
 		3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasourceTest.swift; sourceTree = "<group>"; };
 		3EF797A31F6A95B500A70DE2 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
@@ -66,7 +71,6 @@
 		C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99A2DA11F699BEF002E0C6C /* INGVVL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGVVL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C99A2DA61F699BEF002E0C6C /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		C99A2DAB1F699BEF002E0C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99A2DAE1F699BEF002E0C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C99A2DB01F699BEF002E0C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +111,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3EB8DF981F6B121600058E6E /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */,
+				3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */,
+			);
+			name = Appearance;
+			sourceTree = "<group>";
+		};
 		3EF7979C1F6A8E3200A70DE2 /* CustomDelegateDatasource */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +148,7 @@
 		3EF797A91F6AB00700A70DE2 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				C99A2DA61F699BEF002E0C6C /* AccountsViewController.swift */,
+				3EB8DF9D1F6B127600058E6E /* AccountsViewController.swift */,
 				3EF797BD1F6AC80900A70DE2 /* AccountsContainerView.swift */,
 				3EF797B81F6AB54C00A70DE2 /* AccountRowView.swift */,
 				3EF797B41F6AB4D900A70DE2 /* AccountTableCell.swift */,
@@ -193,6 +206,7 @@
 		C99A2DA31F699BEF002E0C6C /* INGVVL */ = {
 			isa = PBXGroup;
 			children = (
+				3EB8DF981F6B121600058E6E /* Appearance */,
 				3EF797BA1F6AB5F700A70DE2 /* View */,
 				3EF797AF1F6AB3B100A70DE2 /* Delegate */,
 				3EF797AE1F6AB38B00A70DE2 /* Datasource */,
@@ -462,13 +476,15 @@
 				3EF797AD1F6AB0E800A70DE2 /* AccountModel.swift in Sources */,
 				3EF797B61F6AB4D900A70DE2 /* AccountTableCell.swift in Sources */,
 				3EF797BC1F6AB61800A70DE2 /* ViewConfiguration.swift in Sources */,
-				C99A2DA71F699BEF002E0C6C /* AccountsViewController.swift in Sources */,
 				3EF797AB1F6AB0A600A70DE2 /* AccountsTableView.swift in Sources */,
+				3EB8DF9C1F6B125900058E6E /* ColorPallete.swift in Sources */,
 				3EF797B91F6AB54C00A70DE2 /* AccountRowView.swift in Sources */,
 				C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */,
 				3EF797B71F6AB4D900A70DE2 /* AccountsDatasource.swift in Sources */,
 				3EB8DF971F6B0C6A00058E6E /* ResponseModel.swift in Sources */,
 				3EF7979E1F6A8F1700A70DE2 /* MyDelegateDatasource.swift in Sources */,
+				3EB8DF9E1F6B127600058E6E /* AccountsViewController.swift in Sources */,
+				3EB8DF9A1F6B122400058E6E /* AppearanceProxyHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

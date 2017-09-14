@@ -14,7 +14,7 @@ struct AccountModel {
     var accountCurrency: String = ""
     var accountId: Int = 0
     var accountName: String = ""
-    var accountNumber: Int = 0
+    var accountNumber: String = ""
     var accountType: String = ""
     var alias: String = ""
     var isVisible: Bool = false

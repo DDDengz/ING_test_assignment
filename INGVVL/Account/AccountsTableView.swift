@@ -21,7 +21,7 @@ class AccountsTableView: UITableView {
         customDatasource = AccountsDatasource(items: [],
                                                 tableView: self,
                                                 delegate: customDelegate!)
-        self.backgroundColor = UIColor.black
+        self.backgroundColor = ColorPalette.dark
     }
     
     required init?(coder aDecoder: NSCoder) {

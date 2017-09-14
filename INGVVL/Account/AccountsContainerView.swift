@@ -37,6 +37,6 @@ extension AccountsContainerView: ViewConfiguration {
     }
     
     func configureViews(){
-        self.backgroundColor = UIColor.black
+        self.backgroundColor = ColorPalette.dark
     }
 }

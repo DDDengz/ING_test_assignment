@@ -27,7 +27,7 @@ final class AccountTableCell: UITableViewCell {
     
     
     func setup(item: AccountModel) {
-        accountRow.name.text = item.accountName
+        accountRow.name.text = item.accountNumber
         //accountRow.bio.text = item.bio.isEmpty ? "No description" : item.bio
         //if let imagePath = item.thumImage?.fullPath() {
         //    accountRow.imageThumb.download(image: imagePath)
@@ -54,7 +54,7 @@ extension AccountTableCell: ViewConfiguration {
     }
     
     func configureViews() {
-        self.contentView.backgroundColor = UIColor.black
+        self.contentView.backgroundColor = ColorPalette.dark
         self.selectionStyle = .none
     }
 }
