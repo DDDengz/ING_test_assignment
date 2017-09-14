@@ -14,9 +14,11 @@ import Nimble
 @testable import INGVVL
 
 class MyDelegateDatasourceTest: QuickSpec {
+    
     override func spec() {
         
         var myDelegateDatasource: MyDelegateDatasource!
+        let myDelegate = MyDelegateDatasourceMock()
         var tableView: UITableView!
         
         describe("MyDelegateDatasource") {
@@ -26,6 +28,7 @@ class MyDelegateDatasourceTest: QuickSpec {
                 myDelegateDatasource = MyDelegateDatasource()
                 
                 myDelegateDatasource.data = data
+                myDelegateDatasource.delegate = myDelegate
                 
                 tableView = UITableView()
                 tableView.register(UITableViewCell.self,
@@ -42,6 +45,18 @@ class MyDelegateDatasourceTest: QuickSpec {
             
             it("should return the right number of sections") {
                 expect(myDelegateDatasource.numberOfSections(in: tableView)) == 1
+            }
+            
+            //MARK: Delegate
+            
+            it("should return Vitor if user select first Cell") {
+                let indexPath = IndexPath(row: 0, section: 0)
+                
+                expect(myDelegate.didSelectCell) == false
+                
+                myDelegateDatasource.tableView(tableView, didSelectRowAt: indexPath)
+                expect(myDelegate.didSelectCell) == true
+                expect(myDelegate.data!) == "Vitor"
             }
         }
     }

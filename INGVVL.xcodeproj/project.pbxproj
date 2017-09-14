@@ -13,6 +13,7 @@
 		3EF797A11F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */; };
 		3EF797A41F6A95B500A70DE2 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF797A31F6A95B500A70DE2 /* mock.json */; };
 		3EF797A61F6A97FA00A70DE2 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A51F6A97FA00A70DE2 /* FirstSpec.swift */; };
+		3EF797A81F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A71F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift */; };
 		C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */; };
 		C99A2DA71F699BEF002E0C6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA61F699BEF002E0C6C /* ViewController.swift */; };
 		C99A2DAA1F699BEF002E0C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DA81F699BEF002E0C6C /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasourceTest.swift; sourceTree = "<group>"; };
 		3EF797A31F6A95B500A70DE2 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
 		3EF797A51F6A97FA00A70DE2 /* FirstSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
+		3EF797A71F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasourceMock.swift; sourceTree = "<group>"; };
 		9CFEDB0A0FBD5D4020A8D4D5 /* Pods-INGVVLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.release.xcconfig"; sourceTree = "<group>"; };
 		C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */,
+				3EF797A71F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift */,
 			);
 			path = CustomDelegateDatasource;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				C99A2DBA1F699BEF002E0C6C /* INGVVLTests.swift in Sources */,
 				3EF797A61F6A97FA00A70DE2 /* FirstSpec.swift in Sources */,
 				3EF797A11F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift in Sources */,
+				3EF797A81F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
