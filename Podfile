@@ -7,9 +7,9 @@ target 'INGVVL' do
 
   # Pods for INGVVL
   pod 'SnapKit'
-  pod 'Moya'
-  pod 'Moya-ModelMapper'
-  pod 'AlamofireImage'
+  #pod 'Moya'
+  #pod 'Moya-ModelMapper'
+  #pod 'AlamofireImage'
   pod 'Reusable'
 
   abstract_target 'Tests' do

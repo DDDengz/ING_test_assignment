@@ -14,6 +14,13 @@
 		3EF797A41F6A95B500A70DE2 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF797A31F6A95B500A70DE2 /* mock.json */; };
 		3EF797A61F6A97FA00A70DE2 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A51F6A97FA00A70DE2 /* FirstSpec.swift */; };
 		3EF797A81F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A71F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift */; };
+		3EF797AB1F6AB0A600A70DE2 /* AccountsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797AA1F6AB0A600A70DE2 /* AccountsTableView.swift */; };
+		3EF797AD1F6AB0E800A70DE2 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797AC1F6AB0E800A70DE2 /* AccountModel.swift */; };
+		3EF797B31F6AB41100A70DE2 /* ItemsTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B11F6AB41100A70DE2 /* ItemsTableViewDatasource.swift */; };
+		3EF797B61F6AB4D900A70DE2 /* AccountTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B41F6AB4D900A70DE2 /* AccountTableCell.swift */; };
+		3EF797B71F6AB4D900A70DE2 /* AccountsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B51F6AB4D900A70DE2 /* AccountsDatasource.swift */; };
+		3EF797B91F6AB54C00A70DE2 /* AccountRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B81F6AB54C00A70DE2 /* AccountRowView.swift */; };
+		3EF797BC1F6AB61800A70DE2 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797BB1F6AB61800A70DE2 /* ViewConfiguration.swift */; };
 		C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */; };
 		C99A2DA71F699BEF002E0C6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA61F699BEF002E0C6C /* ViewController.swift */; };
 		C99A2DAA1F699BEF002E0C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DA81F699BEF002E0C6C /* Main.storyboard */; };
@@ -44,6 +51,13 @@
 		3EF797A31F6A95B500A70DE2 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
 		3EF797A51F6A97FA00A70DE2 /* FirstSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
 		3EF797A71F6A9D3B00A70DE2 /* MyDelegateDatasourceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasourceMock.swift; sourceTree = "<group>"; };
+		3EF797AA1F6AB0A600A70DE2 /* AccountsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsTableView.swift; path = Account/AccountsTableView.swift; sourceTree = "<group>"; };
+		3EF797AC1F6AB0E800A70DE2 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountModel.swift; path = Account/AccountModel.swift; sourceTree = "<group>"; };
+		3EF797B11F6AB41100A70DE2 /* ItemsTableViewDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewDatasource.swift; sourceTree = "<group>"; };
+		3EF797B41F6AB4D900A70DE2 /* AccountTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountTableCell.swift; path = Account/AccountTableCell.swift; sourceTree = "<group>"; };
+		3EF797B51F6AB4D900A70DE2 /* AccountsDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsDatasource.swift; path = Account/AccountsDatasource.swift; sourceTree = "<group>"; };
+		3EF797B81F6AB54C00A70DE2 /* AccountRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountRowView.swift; path = Account/AccountRowView.swift; sourceTree = "<group>"; };
+		3EF797BB1F6AB61800A70DE2 /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		9CFEDB0A0FBD5D4020A8D4D5 /* Pods-INGVVLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.release.xcconfig"; sourceTree = "<group>"; };
 		C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +130,41 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		3EF797A91F6AB00700A70DE2 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				3EF797B81F6AB54C00A70DE2 /* AccountRowView.swift */,
+				3EF797B41F6AB4D900A70DE2 /* AccountTableCell.swift */,
+				3EF797B51F6AB4D900A70DE2 /* AccountsDatasource.swift */,
+				3EF797AA1F6AB0A600A70DE2 /* AccountsTableView.swift */,
+				3EF797AC1F6AB0E800A70DE2 /* AccountModel.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		3EF797AE1F6AB38B00A70DE2 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				3EF797B11F6AB41100A70DE2 /* ItemsTableViewDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		3EF797AF1F6AB3B100A70DE2 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		3EF797BA1F6AB5F700A70DE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EF797BB1F6AB61800A70DE2 /* ViewConfiguration.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C99A2D981F699BEF002E0C6C = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +188,10 @@
 		C99A2DA31F699BEF002E0C6C /* INGVVL */ = {
 			isa = PBXGroup;
 			children = (
+				3EF797BA1F6AB5F700A70DE2 /* View */,
+				3EF797AF1F6AB3B100A70DE2 /* Delegate */,
+				3EF797AE1F6AB38B00A70DE2 /* Datasource */,
+				3EF797A91F6AB00700A70DE2 /* Account */,
 				3EF797A21F6A958200A70DE2 /* Mock */,
 				3EF7979C1F6A8E3200A70DE2 /* CustomDelegateDatasource */,
 				C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */,
@@ -303,23 +356,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
@@ -386,12 +427,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-INGVVL-Tests-INGVVLTests/Pods-INGVVL-Tests-INGVVLTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
@@ -399,12 +434,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -422,8 +451,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF797B31F6AB41100A70DE2 /* ItemsTableViewDatasource.swift in Sources */,
+				3EF797AD1F6AB0E800A70DE2 /* AccountModel.swift in Sources */,
+				3EF797B61F6AB4D900A70DE2 /* AccountTableCell.swift in Sources */,
+				3EF797BC1F6AB61800A70DE2 /* ViewConfiguration.swift in Sources */,
 				C99A2DA71F699BEF002E0C6C /* ViewController.swift in Sources */,
+				3EF797AB1F6AB0A600A70DE2 /* AccountsTableView.swift in Sources */,
+				3EF797B91F6AB54C00A70DE2 /* AccountRowView.swift in Sources */,
 				C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */,
+				3EF797B71F6AB4D900A70DE2 /* AccountsDatasource.swift in Sources */,
 				3EF7979E1F6A8F1700A70DE2 /* MyDelegateDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
