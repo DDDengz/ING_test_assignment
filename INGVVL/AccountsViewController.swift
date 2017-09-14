@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class AccountsViewController: UIViewController {
     var accounts: [AccountModel] = []
@@ -42,40 +43,14 @@ extension AccountsViewController {
         self.navigationItem.title = "Accounts"
     }
     
-    /*func fetchAccounts(for query: String? = nil) {
-        containerView.accountsTable.isHidden = true
-        
-        apiManager.characters(query: query) { acc in
-            self.accounts = acc ?? []
-
-            self.setupTableView(with: self.characters)
-            }
-        }
-    }*/
-    
     private func parseAccounts() {
-        typealias JsonObject = [String: Any]
         do {
             if let file = Bundle.main.url(forResource: "mock", withExtension: "json") {
                 let data = try Data(contentsOf: file)
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                if let object = json as? JsonObject {
-                    // json is a dictionary
-                    //print(object)
-                    if let array = object["accounts"] as? [AccountModel] {
-                        for ac in array {
-                            let accountName = ac.accountName
-                            let accountCurrency = ac.accountCurrency
-                            let accountNumber = ac.accountNumber
-                            
-                            let account = AccountModel(accountBalanceInCents: 0, accountCurrency: accountCurrency, accountId: 0, accountName: accountName, accountNumber: accountNumber, accountType: "", alias: "", isVisible: false, iban: "")
-                            self.accounts.append(account)
-                        }
-                        self.setupTableView(with: self.accounts)
-                    }
-                } else {
-                    print("JSON is invalid")
-                }
+                let json = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
+                let account = Mapper<AccountModel>().mapArray(JSONArray: json["accounts"])
+                print(account ?? "buceta")
+                self.setupTableView(with: self.accounts)
             } else {
                 print("no file")
             }

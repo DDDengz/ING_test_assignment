@@ -7,77 +7,33 @@
 //
 
 import UIKit
+import ObjectMapper
 
 struct AccountModel {
-    typealias JsonObject = [String: Any]
-    
-    let accountBalanceInCents: Int
-    let accountCurrency: String
-    let accountId: Int
-    let accountName: String
-    let accountNumber: Int
-    let accountType: String
-    let alias: String
-    let isVisible: Bool
-    let iban: String
-    
-    init(accountBalanceInCents: Int, accountCurrency: String, accountId: Int, accountName: String, accountNumber: Int, accountType: String, alias: String, isVisible: Bool, iban: String) {
-        self.accountBalanceInCents = accountBalanceInCents
-        self.accountCurrency = accountCurrency
-        self.accountId = accountId
-        self.accountName = accountName
-        self.accountNumber = accountNumber
-        self.accountType = accountType
-        self.alias = alias
-        self.isVisible = isVisible
-        self.iban = iban
+    var accountBalanceInCents: Int = 0
+    var accountCurrency: String = ""
+    var accountId: Int = 0
+    var accountName: String = ""
+    var accountNumber: Int = 0
+    var accountType: String = ""
+    var alias: String = ""
+    var isVisible: Bool = false
+    var iban: String = ""
+}
+
+extension AccountModel: Mappable {
+    init?(map: Map) {
     }
     
-    init?(json: JsonObject) {
-        guard let accountBalanceInCents = json["accountBalanceInCents"] as? Int else {
-            return nil
-        }
-        
-        guard let accountCurrency = json["accountCurrency"] as? String else {
-            return nil
-        }
-        
-        guard let accountId = json["accountId"] as? Int else {
-            return nil
-        }
-        
-        guard let accountName = json["accountName"] as? String else {
-            return nil
-        }
-        
-        guard let accountNumber = json["accountNumber"] as? Int else {
-            return nil
-        }
-        
-        guard let accountType = json["accountType"] as? String else {
-            return nil
-        }
-        
-        guard let alias = json["alias"] as? String else {
-            return nil
-        }
-        
-        guard let isVisible = json["isVisible"] as? Bool else {
-            return nil
-        }
-        
-        guard let iban = json["iban"] as? String else {
-            return nil
-        }
-        
-        self.accountBalanceInCents = accountBalanceInCents
-        self.accountCurrency = accountCurrency
-        self.accountId = accountId
-        self.accountName = accountName
-        self.accountNumber = accountNumber
-        self.accountType = accountType
-        self.alias = alias
-        self.isVisible = isVisible
-        self.iban = iban
+    mutating func mapping(map: Map) {
+        self.accountBalanceInCents <- map["accountBalanceInCents"]
+        self.accountCurrency <- map["accountCurrency"]
+        self.accountId <- map["accountId"]
+        self.accountName <- map["accountName"]
+        self.accountNumber <- map["accountNumber"]
+        self.accountType <- map["accountType"]
+        self.alias <- map["alias"]
+        self.isVisible <- map["isVisible"]
+        self.iban <- map["iban"]
     }
 }
