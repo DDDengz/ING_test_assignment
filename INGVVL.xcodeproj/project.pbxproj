@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02B0C8A72120A526C4577FF9 /* Pods_INGVVL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */; };
 		042793D2EB16F8AA2703F251 /* Pods_INGVVLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */; };
+		3EB8DF971F6B0C6A00058E6E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */; };
 		3EF7979E1F6A8F1700A70DE2 /* MyDelegateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7979D1F6A8F1700A70DE2 /* MyDelegateDatasource.swift */; };
 		3EF797A11F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */; };
 		3EF797A41F6A95B500A70DE2 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF797A31F6A95B500A70DE2 /* mock.json */; };
@@ -46,6 +47,7 @@
 		37BDCEE2EB0EB27DE425B951 /* Pods-INGVVLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.debug.xcconfig"; sourceTree = "<group>"; };
 		3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseModel.swift; path = Account/ResponseModel.swift; sourceTree = "<group>"; };
 		3EF7979D1F6A8F1700A70DE2 /* MyDelegateDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasource.swift; sourceTree = "<group>"; };
 		3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasourceTest.swift; sourceTree = "<group>"; };
 		3EF797A31F6A95B500A70DE2 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				3EF797B51F6AB4D900A70DE2 /* AccountsDatasource.swift */,
 				3EF797AA1F6AB0A600A70DE2 /* AccountsTableView.swift */,
 				3EF797AC1F6AB0E800A70DE2 /* AccountModel.swift */,
+				3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				3EF797B91F6AB54C00A70DE2 /* AccountRowView.swift in Sources */,
 				C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */,
 				3EF797B71F6AB4D900A70DE2 /* AccountsDatasource.swift in Sources */,
+				3EB8DF971F6B0C6A00058E6E /* ResponseModel.swift in Sources */,
 				3EF7979E1F6A8F1700A70DE2 /* MyDelegateDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

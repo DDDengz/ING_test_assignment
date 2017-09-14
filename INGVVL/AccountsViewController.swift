@@ -47,10 +47,14 @@ extension AccountsViewController {
         do {
             if let file = Bundle.main.url(forResource: "mock", withExtension: "json") {
                 let data = try Data(contentsOf: file)
-                let json = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
-                let account = Mapper<AccountModel>().mapArray(JSONArray: json["accounts"])
-                print(account ?? "buceta")
-                self.setupTableView(with: self.accounts)
+                let json = try JSONSerialization.jsonObject(with: data, options: [])
+                if let object = json as? [String : Any] {
+                    let response = Mapper<ResponseModel>().map(JSON: object)
+                    response?.accounts.forEach({ (account) in
+                        self.accounts.append(account)
+                    })
+                    self.setupTableView(with: self.accounts)
+                }
             } else {
                 print("no file")
             }
