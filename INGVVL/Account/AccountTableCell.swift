@@ -46,6 +46,7 @@ extension AccountTableCell: ViewConfiguration {
             make.left.equalTo(self)
             make.right.equalTo(self)
             make.bottom.equalTo(self)
+            
         }
     }
     
