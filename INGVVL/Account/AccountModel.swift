@@ -9,13 +9,27 @@
 import UIKit
 import ObjectMapper
 
+enum AccountType: Int {
+    case payment, saving, IBA, MMDA, CD
+    
+    var description : String {
+        switch self {
+        case .payment: return "Payment Accounts"
+        case .saving: return "Saving Accounts"
+        case .IBA: return "Interest-Bearing Checking Accounts"
+        case .MMDA: return "Money Market Deposit Accounts"
+        case .CD: return "Certificates of Deposit"
+        }
+    }
+}
+
 struct AccountModel {
     var accountBalanceInCents: Int = 0
     var accountCurrency: String = ""
     var accountId: Int = 0
     var accountName: String = ""
     var accountNumber: String = ""
-    var accountType: String = ""
+    var accountType: AccountType = .payment
     var alias: String = ""
     var isVisible: Bool = false
     var iban: String = ""
@@ -31,7 +45,16 @@ extension AccountModel: Mappable {
         self.accountId <- map["accountId"]
         self.accountName <- map["accountName"]
         self.accountNumber <- map["accountNumber"]
-        self.accountType <- map["accountType"]
+        
+        var accType:String = ""
+        accType <- map["accountType"]
+        switch accType {
+        case "SAVING":
+            self.accountType = .saving
+        default:
+            self.accountType = .payment
+        }
+
         self.alias <- map["alias"]
         self.isVisible <- map["isVisible"]
         self.iban <- map["iban"]

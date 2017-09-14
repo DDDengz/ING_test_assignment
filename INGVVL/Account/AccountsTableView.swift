@@ -30,14 +30,14 @@ class AccountsTableView: UITableView {
 }
 
 extension AccountsTableView {
-    func updateItems(_ items: [AccountModel]) {
-        customDatasource?.updateItems(items)
+    func updateItems(items: [AccountModel], itemsByCategory: [AccountType : [Int]]) {
+        customDatasource?.updateItems(items: items, itemsByCategory: itemsByCategory)
     }
 }
 
 extension AccountsTableView: AccountsDelegate {
     func didSelectAccount(at index: IndexPath) {
-        let itemsCount = numberOfRows(inSection: 0)
+        let itemsCount = numberOfRows(inSection: index.section)
         guard itemsCount > index.row else {
             return
         }

@@ -73,7 +73,7 @@ extension AccountView: ViewConfiguration {
 
 extension AccountView {
     func setup(with account: AccountModel) {
-        iban.text = account.iban.isEmpty ? "No IBAN" : account.iban
+        iban.text = account.iban.isEmpty ? "---" : account.iban
         /*if let imagePath = account.thumImage?.fullPath() {
             image.download(image: imagePath)
         }*/

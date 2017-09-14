@@ -9,15 +9,12 @@
 import UIKit
 import ObjectMapper
 
+protocol ItemsByCategoryProtocol {
+    func setupTableView(accounts: [AccountModel], itemsByCategory: [AccountType : [Int]])
+}
+
 class AccountsViewController: UIViewController {
-    var accounts: [AccountModel] = []
-    
     let containerView = AccountsContainerView()
-    
-    /*init(apiManager: MarvelAPICalls) {
-        self.apiManager = apiManager
-        super.init(nibName: nil, bundle: nil)
-    }*/
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -28,7 +25,7 @@ class AccountsViewController: UIViewController {
     }
 }
 
-extension AccountsViewController {
+extension AccountsViewController : ItemsByCategoryProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationItem()
@@ -49,11 +46,24 @@ extension AccountsViewController {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 if let object = json as? [String : Any] {
+                    var accounts: [AccountModel] = []
                     let response = Mapper<ResponseModel>().map(JSON: object)
                     response?.accounts.forEach({ (account) in
-                        self.accounts.append(account)
+                        accounts.append(account)
                     })
-                    self.setupTableView(with: self.accounts)
+                    
+                    //categorize the type of accounts for table sections using an array of indexes:
+                    var itemsByCategory: [AccountType : [Int]] = [:]
+                    for (index, item) in accounts.enumerated() {
+                        if (itemsByCategory[item.accountType] == nil) {
+                            itemsByCategory[item.accountType] = []
+                        }
+                        itemsByCategory[item.accountType]?.append(index)
+                    }
+
+                    print(itemsByCategory)
+                    
+                    self.setupTableView(accounts: accounts, itemsByCategory: itemsByCategory)
                 }
             } else {
                 print("no file")
@@ -63,8 +73,8 @@ extension AccountsViewController {
         }
     }
     
-    func setupTableView(with accounts: [AccountModel]) {
-        containerView.accountsTable.updateItems(accounts)
+    func setupTableView(accounts: [AccountModel], itemsByCategory: [AccountType : [Int]]) {
+        containerView.accountsTable.updateItems(items: accounts, itemsByCategory: itemsByCategory)
         containerView.accountsTable.didSelectAccount = { [weak self] acc in
             self?.navigateToNextController(with: acc)
         }

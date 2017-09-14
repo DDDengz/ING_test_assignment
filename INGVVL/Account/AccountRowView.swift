@@ -10,11 +10,10 @@ import UIKit
 import SnapKit
 
 class AccountRowView: UIView {
-    
-    var imageThumb: UIImageView = {
+    /*var imageThumb: UIImageView = {
         let img = UIImageView(frame: .zero)
         return img
-    }()
+    }()*/
     
     var name: UILabel = {
         let lb = UILabel(frame: .zero)
@@ -22,7 +21,7 @@ class AccountRowView: UIView {
         return lb
     }()
     
-    var bio: UILabel = {
+    var iban: UILabel = {
         let lb = UILabel(frame: .zero)
         lb.numberOfLines = 0
         lb.textColor = ColorPalette.clean
@@ -41,32 +40,32 @@ class AccountRowView: UIView {
 
 extension AccountRowView: ViewConfiguration {
     func setupConstraints() {
-        imageThumb.snp.makeConstraints { make in
+        /*imageThumb.snp.makeConstraints { make in
             make.top.equalTo(self)
             make.left.equalTo(self)
             make.bottom.equalTo(self)
             make.width.equalTo(self.snp.height)
-        }
+        }*/
         
         name.snp.makeConstraints { make in
             make.top.equalTo(self).offset(15)
-            make.left.equalTo(imageThumb.snp.right).offset(15)
+            make.left.equalTo(self).offset(15)
             make.right.equalTo(self).offset(-15)
             make.height.equalTo(21)
         }
         
-        bio.snp.makeConstraints { make in
+        iban.snp.makeConstraints { make in
             make.top.equalTo(name.snp.bottom).offset(8)
-            make.left.equalTo(imageThumb.snp.right).offset(15)
+            make.left.equalTo(self).offset(15)
             make.right.equalTo(self).offset(-15)
             make.bottom.equalTo(self).offset(-15)
         }
     }
     
     func buildViewHierarchy() {
-        self.addSubview(imageThumb)
+        //self.addSubview(imageThumb)
         self.addSubview(name)
-        self.addSubview(bio)
+        self.addSubview(iban)
     }
 }
 

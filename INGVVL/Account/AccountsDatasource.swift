@@ -11,21 +11,35 @@ import UIKit
 class AccountsDatasource: NSObject, ItemsTableViewDatasource {
     
     var items:[AccountModel] = []
+    var itemsByCategory: [AccountType : Int] = [:]
+    
     weak var tableView: UITableView?
     weak var delegate: UITableViewDelegate?
     
-    required init(items: [AccountModel], tableView: UITableView, delegate: UITableViewDelegate) {
+    required init(items: [T], tableView: UITableView, delegate: UITableViewDelegate) {
         self.items = items
         self.tableView = tableView
         self.delegate = delegate
         super.init()
         tableView.register(cellType: AccountTableCell.self)
+        
         self.setupTableView()
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.itemsByCategory.count
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+        
+        switch section {
+        case AccountType.payment.rawValue:
+            return itemsByCategory[AccountType.payment] ?? 0
+        case AccountType.saving.rawValue:
+            return itemsByCategory[AccountType.saving] ?? 0
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -33,11 +47,23 @@ class AccountsDatasource: NSObject, ItemsTableViewDatasource {
         
         let account = self.items[indexPath.row]
         cell.setup(item: account)
+        
         return cell
     }
     
-    func updateItems(_ items: [AccountModel]) {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+            case AccountType.saving.rawValue: return AccountType.saving.description
+            case AccountType.IBA.rawValue: return AccountType.IBA.description
+            case AccountType.MMDA.rawValue: return AccountType.MMDA.description
+            case AccountType.CD.rawValue: return AccountType.CD.description
+            default: return AccountType.payment.description
+        }
+    }
+    
+    func updateItems(items: [AccountModel], itemsByCategory: [AccountType : [Int]]) {
         self.items = items
+        self.itemsByCategory = itemsByCategory
         self.tableView?.reloadData()
     }
 }
