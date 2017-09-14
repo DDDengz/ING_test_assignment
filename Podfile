@@ -1,13 +1,14 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
 target 'INGVVL' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for INGVVL
-	pod "SnapKit"	
+	pod 'SnapKit'	
 	pod 'Moya'
+	pod 'Reusable'
 
   target 'INGVVLTests' do
     inherit! :search_paths

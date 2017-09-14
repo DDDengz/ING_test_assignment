@@ -184,8 +184,7 @@
 				TargetAttributes = {
 					C99A2DA01F699BEF002E0C6C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = XQN3A35EM8;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					C99A2DB41F699BEF002E0C6C = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -260,6 +259,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -267,6 +267,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,11 +496,13 @@
 			baseConfigurationReference = 3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XQN3A35EM8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -509,11 +512,13 @@
 			baseConfigurationReference = A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XQN3A35EM8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -522,7 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CFEDB0A0FBD5D4020A8D4D5 /* Pods-INGVVLTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XQN3A35EM8;
 				INFOPLIST_FILE = INGVVLTests/Info.plist;
@@ -538,7 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37BDCEE2EB0EB27DE425B951 /* Pods-INGVVLTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = XQN3A35EM8;
 				INFOPLIST_FILE = INGVVLTests/Info.plist;
@@ -569,6 +574,7 @@
 				C99A2DC01F699BEF002E0C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C99A2DC11F699BEF002E0C6C /* Build configuration list for PBXNativeTarget "INGVVLTests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +583,7 @@
 				C99A2DC31F699BEF002E0C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
