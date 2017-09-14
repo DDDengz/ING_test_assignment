@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		02B0C8A72120A526C4577FF9 /* Pods_INGVVL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */; };
 		042793D2EB16F8AA2703F251 /* Pods_INGVVLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */; };
+		3EF7979E1F6A8F1700A70DE2 /* MyDelegateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7979D1F6A8F1700A70DE2 /* MyDelegateDatasource.swift */; };
+		3EF797A11F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */; };
+		3EF797A41F6A95B500A70DE2 /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF797A31F6A95B500A70DE2 /* mock.json */; };
+		3EF797A61F6A97FA00A70DE2 /* FirstSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797A51F6A97FA00A70DE2 /* FirstSpec.swift */; };
 		C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */; };
 		C99A2DA71F699BEF002E0C6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA61F699BEF002E0C6C /* ViewController.swift */; };
 		C99A2DAA1F699BEF002E0C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DA81F699BEF002E0C6C /* Main.storyboard */; };
 		C99A2DAC1F699BEF002E0C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DAB1F699BEF002E0C6C /* Assets.xcassets */; };
 		C99A2DAF1F699BEF002E0C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DAD1F699BEF002E0C6C /* LaunchScreen.storyboard */; };
 		C99A2DBA1F699BEF002E0C6C /* INGVVLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DB91F699BEF002E0C6C /* INGVVLTests.swift */; };
+		CC7871D223E4C419A8088E16 /* Pods_INGVVL_Tests_INGVVLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB0D1356C067835F4A04D15 /* Pods_INGVVL_Tests_INGVVLTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EB0D1356C067835F4A04D15 /* Pods_INGVVL_Tests_INGVVLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVL_Tests_INGVVLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143045DF6E73F992218A27FE /* Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL-Tests-INGVVLTests/Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		37BDCEE2EB0EB27DE425B951 /* Pods-INGVVLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.debug.xcconfig"; sourceTree = "<group>"; };
 		3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF7979D1F6A8F1700A70DE2 /* MyDelegateDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasource.swift; sourceTree = "<group>"; };
+		3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDelegateDatasourceTest.swift; sourceTree = "<group>"; };
+		3EF797A31F6A95B500A70DE2 /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock.json; sourceTree = "<group>"; };
+		3EF797A51F6A97FA00A70DE2 /* FirstSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSpec.swift; sourceTree = "<group>"; };
 		9CFEDB0A0FBD5D4020A8D4D5 /* Pods-INGVVLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.release.xcconfig"; sourceTree = "<group>"; };
 		C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,7 @@
 		C99A2DB51F699BEF002E0C6C /* INGVVLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INGVVLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99A2DB91F699BEF002E0C6C /* INGVVLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INGVVLTests.swift; sourceTree = "<group>"; };
 		C99A2DBB1F699BEF002E0C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D875C0371D2B85954B85C417 /* Pods-INGVVL-Tests-INGVVLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL-Tests-INGVVLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL-Tests-INGVVLTests/Pods-INGVVL-Tests-INGVVLTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				042793D2EB16F8AA2703F251 /* Pods_INGVVLTests.framework in Frameworks */,
+				CC7871D223E4C419A8088E16 /* Pods_INGVVL_Tests_INGVVLTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +84,33 @@
 			children = (
 				3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */,
 				C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */,
+				0EB0D1356C067835F4A04D15 /* Pods_INGVVL_Tests_INGVVLTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EF7979C1F6A8E3200A70DE2 /* CustomDelegateDatasource */ = {
+			isa = PBXGroup;
+			children = (
+				3EF7979D1F6A8F1700A70DE2 /* MyDelegateDatasource.swift */,
+			);
+			path = CustomDelegateDatasource;
+			sourceTree = "<group>";
+		};
+		3EF7979F1F6A8F9500A70DE2 /* CustomDelegateDatasource */ = {
+			isa = PBXGroup;
+			children = (
+				3EF797A01F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift */,
+			);
+			path = CustomDelegateDatasource;
+			sourceTree = "<group>";
+		};
+		3EF797A21F6A958200A70DE2 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3EF797A31F6A95B500A70DE2 /* mock.json */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		C99A2D981F699BEF002E0C6C = {
@@ -98,6 +136,8 @@
 		C99A2DA31F699BEF002E0C6C /* INGVVL */ = {
 			isa = PBXGroup;
 			children = (
+				3EF797A21F6A958200A70DE2 /* Mock */,
+				3EF7979C1F6A8E3200A70DE2 /* CustomDelegateDatasource */,
 				C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */,
 				C99A2DA61F699BEF002E0C6C /* ViewController.swift */,
 				C99A2DA81F699BEF002E0C6C /* Main.storyboard */,
@@ -111,8 +151,10 @@
 		C99A2DB81F699BEF002E0C6C /* INGVVLTests */ = {
 			isa = PBXGroup;
 			children = (
+				3EF7979F1F6A8F9500A70DE2 /* CustomDelegateDatasource */,
 				C99A2DB91F699BEF002E0C6C /* INGVVLTests.swift */,
 				C99A2DBB1F699BEF002E0C6C /* Info.plist */,
+				3EF797A51F6A97FA00A70DE2 /* FirstSpec.swift */,
 			);
 			path = INGVVLTests;
 			sourceTree = "<group>";
@@ -124,6 +166,8 @@
 				A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */,
 				9CFEDB0A0FBD5D4020A8D4D5 /* Pods-INGVVLTests.debug.xcconfig */,
 				37BDCEE2EB0EB27DE425B951 /* Pods-INGVVLTests.release.xcconfig */,
+				143045DF6E73F992218A27FE /* Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig */,
+				D875C0371D2B85954B85C417 /* Pods-INGVVL-Tests-INGVVLTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -188,8 +232,7 @@
 					};
 					C99A2DB41F699BEF002E0C6C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = XQN3A35EM8;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = C99A2DA01F699BEF002E0C6C;
 					};
 				};
@@ -221,6 +264,7 @@
 				C99A2DAF1F699BEF002E0C6C /* LaunchScreen.storyboard in Resources */,
 				C99A2DAC1F699BEF002E0C6C /* Assets.xcassets in Resources */,
 				C99A2DAA1F699BEF002E0C6C /* Main.storyboard in Resources */,
+				3EF797A41F6A95B500A70DE2 /* mock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGVVL-Tests-INGVVLTests/Pods-INGVVL-Tests-INGVVLTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		38AD57724239904CE12F5923 /* [CP] Embed Pods Frameworks */ = {
@@ -257,7 +301,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -265,7 +312,10 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -319,7 +369,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-INGVVLTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-INGVVL-Tests-INGVVLTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,18 +382,34 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-INGVVL-Tests-INGVVLTests/Pods-INGVVL-Tests-INGVVLTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ModelMapper/Moya_ModelMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ModelMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGVVL-Tests-INGVVLTests/Pods-INGVVL-Tests-INGVVLTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -355,6 +421,7 @@
 			files = (
 				C99A2DA71F699BEF002E0C6C /* ViewController.swift in Sources */,
 				C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */,
+				3EF7979E1F6A8F1700A70DE2 /* MyDelegateDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99A2DBA1F699BEF002E0C6C /* INGVVLTests.swift in Sources */,
+				3EF797A61F6A97FA00A70DE2 /* FirstSpec.swift in Sources */,
+				3EF797A11F6A8FCC00A70DE2 /* MyDelegateDatasourceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +468,7 @@
 		C99A2DBC1F699BEF002E0C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -450,6 +520,7 @@
 		C99A2DBD1F699BEF002E0C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -495,10 +566,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVL/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -511,10 +583,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVL/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,15 +598,16 @@
 		};
 		C99A2DC21F699BEF002E0C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CFEDB0A0FBD5D4020A8D4D5 /* Pods-INGVVLTests.debug.xcconfig */;
+			baseConfigurationReference = 143045DF6E73F992218A27FE /* Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = XQN3A35EM8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INGVVL.app/INGVVL";
 			};
@@ -541,15 +615,16 @@
 		};
 		C99A2DC31F699BEF002E0C6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37BDCEE2EB0EB27DE425B951 /* Pods-INGVVLTests.release.xcconfig */;
+			baseConfigurationReference = D875C0371D2B85954B85C417 /* Pods-INGVVL-Tests-INGVVLTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = XQN3A35EM8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/INGVVL.app/INGVVL";
 			};
