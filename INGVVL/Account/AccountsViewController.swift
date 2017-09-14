@@ -65,9 +65,14 @@ extension AccountsViewController {
     
     func setupTableView(with accounts: [AccountModel]) {
         containerView.accountsTable.updateItems(accounts)
-        //containerView.accountsTable.didSelectCharacter = { [weak self] char in
-        //    self?.navigateToNextController(with: char)
-        //}
+        containerView.accountsTable.didSelectAccount = { [weak self] acc in
+            self?.navigateToNextController(with: acc)
+        }
+    }
+    
+    func navigateToNextController(with account: AccountModel) {
+        let nextController = AccountDetailsViewController(account: account)
+        self.navigationController?.pushViewController(nextController, animated: true)
     }
 }
 
