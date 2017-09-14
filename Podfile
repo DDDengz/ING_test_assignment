@@ -15,7 +15,7 @@ target 'INGVVL' do
   abstract_target 'Tests' do
       target "INGVVLTests"
       pod 'Quick'
-      pod 'Nimble-Snapshots'
+      pod 'Nimble'
   end
 
 end
