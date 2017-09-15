@@ -79,7 +79,12 @@ class AccountsDatasource: NSObject, ItemsTableViewDatasource {
     func updateItems(items: [AccountModel], itemsByCategory: [AccountType : [Int]]) {
         self.items = items
         self.itemsByCategory = itemsByCategory
-        self.tableView?.reloadData()
+        if let table = tableView {
+            UIView.transition(with: table,
+                          duration: 0.35,
+                          options: .transitionCrossDissolve,
+                          animations: { table.reloadData() })
+        }
     }
 }
 
