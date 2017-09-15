@@ -38,14 +38,22 @@
          "savingsTargetReached":1,
          "targetAmountInCents":2000
       },
-               {
-               "accountBalanceInCents":15000,
-               "accountCurrency":"EUR",
-               "accountId":700000027559,
-               "accountName":"",
-               "accountNumber":"H 177-27066",
-               "accountType":"PAYMENT",
-               }
+       {
+           "accountBalanceInCents":15000,
+           "accountCurrency":"EUR",
+           "accountId":1234,
+           "accountName":"VITOR",
+           "accountNumber":"12345",
+           "accountType":"PAYMENT",
+       },
+       {
+           "accountBalanceInCents":15000,
+           "accountCurrency":"EUR",
+           "accountId":339900,
+           "accountName":"VENTURIN",
+           "accountNumber":"54321",
+           "accountType":"SAVING",
+       }
    ],
    "failedAccountTypes":"CREDITCARDS",
    "returnCode":"OK"

@@ -60,8 +60,6 @@ extension AccountsViewController : ItemsByCategoryProtocol {
                         }
                         itemsByCategory[item.accountType]?.append(index)
                     }
-
-                    print(itemsByCategory)
                     
                     self.setupTableView(accounts: accounts, itemsByCategory: itemsByCategory)
                 }

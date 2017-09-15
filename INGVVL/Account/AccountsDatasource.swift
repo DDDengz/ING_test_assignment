@@ -11,12 +11,12 @@ import UIKit
 class AccountsDatasource: NSObject, ItemsTableViewDatasource {
     
     var items:[AccountModel] = []
-    var itemsByCategory: [AccountType : Int] = [:]
+    var itemsByCategory: [AccountType : [Int]] = [:]
     
     weak var tableView: UITableView?
     weak var delegate: UITableViewDelegate?
     
-    required init(items: [T], tableView: UITableView, delegate: UITableViewDelegate) {
+    required init(items: [AccountModel], tableView: UITableView, delegate: UITableViewDelegate) {
         self.items = items
         self.tableView = tableView
         self.delegate = delegate
@@ -33,19 +33,34 @@ class AccountsDatasource: NSObject, ItemsTableViewDatasource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         switch section {
-        case AccountType.payment.rawValue:
-            return itemsByCategory[AccountType.payment] ?? 0
         case AccountType.saving.rawValue:
-            return itemsByCategory[AccountType.saving] ?? 0
+            if let count = itemsByCategory[AccountType.saving]?.count {
+                return count
+            }
         default:
-            return 0
+            if let count = itemsByCategory[AccountType.payment]?.count {
+                return count
+            }
         }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath, cellType: AccountTableCell.self)
         
-        let account = self.items[indexPath.row]
+        var index: Int = 0
+        switch indexPath.section {
+        case AccountType.saving.rawValue:
+            if let count = itemsByCategory[AccountType.saving]?[indexPath.row] {
+                index = count
+            }
+        default:
+            if let count = itemsByCategory[AccountType.payment]?[indexPath.row] {
+                index = count
+            }
+        }
+        
+        let account = self.items[index]
         cell.setup(item: account)
         
         return cell
