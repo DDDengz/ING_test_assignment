@@ -40,7 +40,6 @@ extension AccountsViewController : ItemsByCategoryProtocol {
     func setupNavigationItem() {
         self.navigationItem.title = "Accounts"
         self.navigationItem.rightBarButtonItems = [
-            NavigationItems.show(self, #selector(show(_:))).button(),
             NavigationItems.hide(self, #selector(hide(_:))).button()
         ]
     }
@@ -100,12 +99,18 @@ extension AccountsViewController : ItemsByCategoryProtocol {
         if let response = response {
             categorizeAccounts(response, showAll: true)
         }
+        self.navigationItem.rightBarButtonItems = [
+            NavigationItems.hide(self, #selector(hide(_:))).button()
+        ]
     }
     
     func hide(_ sender: UIButton) {
         if let response = response {
             categorizeAccounts(response, showAll: false)
         }
+        self.navigationItem.rightBarButtonItems = [
+            NavigationItems.show(self, #selector(show(_:))).button()
+        ]
     }
 }
 
