@@ -14,6 +14,7 @@ protocol ItemsByCategoryProtocol {
 }
 
 class AccountsViewController: UIViewController {
+    var response: ResponseModel?
     let containerView = AccountsContainerView()
     
     init() {
@@ -38,6 +39,10 @@ extension AccountsViewController : ItemsByCategoryProtocol {
     
     func setupNavigationItem() {
         self.navigationItem.title = "Accounts"
+        self.navigationItem.rightBarButtonItems = [
+            NavigationItems.show(self, #selector(show(_:))).button(),
+            NavigationItems.hide(self, #selector(hide(_:))).button()
+        ]
     }
     
     private func parseAccounts() {
@@ -46,22 +51,10 @@ extension AccountsViewController : ItemsByCategoryProtocol {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 if let object = json as? [String : Any] {
-                    var accounts: [AccountModel] = []
-                    let response = Mapper<ResponseModel>().map(JSON: object)
-                    response?.accounts.forEach({ (account) in
-                        accounts.append(account)
-                    })
-                    
-                    //categorize the type of accounts for table sections using an array of indexes:
-                    var itemsByCategory: [AccountType : [Int]] = [:]
-                    for (index, item) in accounts.enumerated() {
-                        if (itemsByCategory[item.accountType] == nil) {
-                            itemsByCategory[item.accountType] = []
-                        }
-                        itemsByCategory[item.accountType]?.append(index)
+                    if let response = Mapper<ResponseModel>().map(JSON: object) {
+                        self.response = response
+                        categorizeAccounts(response, showAll: true)
                     }
-                    
-                    self.setupTableView(accounts: accounts, itemsByCategory: itemsByCategory)
                 }
             } else {
                 print("no file")
@@ -69,6 +62,26 @@ extension AccountsViewController : ItemsByCategoryProtocol {
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    private func categorizeAccounts(_ response: ResponseModel, showAll: Bool) {
+        var accounts: [AccountModel] = []
+        for account in response.accounts {
+            if !showAll && !account.isVisible {
+               continue
+            }
+            accounts.append(account)
+        }
+        
+        //categorize the type of accounts for table sections using an array of indexes:
+        var itemsByCategory: [AccountType : [Int]] = [:]
+        for (index, item) in accounts.enumerated() {
+            if (itemsByCategory[item.accountType] == nil) {
+                itemsByCategory[item.accountType] = []
+            }
+            itemsByCategory[item.accountType]?.append(index)
+        }
+        self.setupTableView(accounts: accounts, itemsByCategory: itemsByCategory)
     }
     
     func setupTableView(accounts: [AccountModel], itemsByCategory: [AccountType : [Int]]) {
@@ -81,6 +94,18 @@ extension AccountsViewController : ItemsByCategoryProtocol {
     func navigateToNextController(with account: AccountModel) {
         let nextController = AccountDetailsViewController(account: account)
         self.navigationController?.pushViewController(nextController, animated: true)
+    }
+    
+    func show(_ sender: UIButton) {
+        if let response = response {
+            categorizeAccounts(response, showAll: true)
+        }
+    }
+    
+    func hide(_ sender: UIButton) {
+        if let response = response {
+            categorizeAccounts(response, showAll: false)
+        }
     }
 }
 

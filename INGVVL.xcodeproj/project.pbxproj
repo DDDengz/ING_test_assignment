@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02B0C8A72120A526C4577FF9 /* Pods_INGVVL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */; };
 		042793D2EB16F8AA2703F251 /* Pods_INGVVLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */; };
+		3E87F1DF1F6B5EC2003EB2ED /* NavigationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E87F1DE1F6B5EC2003EB2ED /* NavigationItems.swift */; };
 		3EB8DF971F6B0C6A00058E6E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */; };
 		3EB8DF9A1F6B122400058E6E /* AppearanceProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */; };
 		3EB8DF9C1F6B125900058E6E /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */; };
@@ -48,6 +49,7 @@
 		37BDCEE2EB0EB27DE425B951 /* Pods-INGVVLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.debug.xcconfig"; sourceTree = "<group>"; };
 		3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E87F1DE1F6B5EC2003EB2ED /* NavigationItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItems.swift; path = Appearance/NavigationItems.swift; sourceTree = "<group>"; };
 		3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseModel.swift; path = Account/ResponseModel.swift; sourceTree = "<group>"; };
 		3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppearanceProxyHelper.swift; path = Appearance/AppearanceProxyHelper.swift; sourceTree = "<group>"; };
 		3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPallete.swift; path = Appearance/ColorPallete.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */,
 				3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */,
+				3E87F1DE1F6B5EC2003EB2ED /* NavigationItems.swift */,
 			);
 			name = Appearance;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			files = (
 				3EF797BE1F6AC80900A70DE2 /* AccountsContainerView.swift in Sources */,
 				3EF797B31F6AB41100A70DE2 /* ItemsTableViewDatasource.swift in Sources */,
+				3E87F1DF1F6B5EC2003EB2ED /* NavigationItems.swift in Sources */,
 				3EF797AD1F6AB0E800A70DE2 /* AccountModel.swift in Sources */,
 				3EF797B61F6AB4D900A70DE2 /* AccountTableCell.swift in Sources */,
 				3EB8DFA21F6B148000058E6E /* AccountView.swift in Sources */,
