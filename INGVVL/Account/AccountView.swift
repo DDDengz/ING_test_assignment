@@ -9,19 +9,35 @@
 import UIKit
 
 class AccountView: UIView {
-    /*var image: UIImageView = {
-        let img = UIImageView(frame: .zero)
-        return img
-    }()*/
-    
     var containerView: UIView = {
-        let lb = UIView(frame: .zero)
-        lb.backgroundColor = ColorPalette.dark
-        lb.alpha = CGFloat(0.85)
-        return lb
+        let view = UIView(frame: .zero)
+        view.backgroundColor = ColorPalette.dark
+        view.alpha = CGFloat(0.85)
+        return view
     }()
     
     var iban: UILabel = {
+        let lb = UILabel(frame: .zero)
+        lb.numberOfLines = 0
+        lb.textColor = ColorPalette.clean
+        return lb
+    }()
+    
+    var currency: UILabel = {
+        let lb = UILabel(frame: .zero)
+        lb.numberOfLines = 0
+        lb.textColor = ColorPalette.clean
+        return lb
+    }()
+    
+    var saldo: UILabel = {
+        let lb = UILabel(frame: .zero)
+        lb.numberOfLines = 0
+        lb.textColor = ColorPalette.clean
+        return lb
+    }()
+    
+    var productName: UILabel = {
         let lb = UILabel(frame: .zero)
         lb.numberOfLines = 0
         lb.textColor = ColorPalette.clean
@@ -41,13 +57,6 @@ class AccountView: UIView {
 
 extension AccountView: ViewConfiguration {
     func setupConstraints() {
-        /*image.snp.makeConstraints { make in
-            make.top.equalTo(self).offset(64)
-            make.left.equalTo(self)
-            make.right.equalTo(self)
-            make.height.equalTo(350)
-        }*/
-        
         containerView.snp.makeConstraints { make in
             make.top.equalTo(self)
             make.bottom.equalTo(self)
@@ -56,13 +65,35 @@ extension AccountView: ViewConfiguration {
         }
         
         iban.snp.makeConstraints { make in
-            make.edges.equalTo(containerView).inset(UIEdgeInsetsMake(15, 15, 15, 15))
+            make.top.equalTo(containerView).offset(80)
+            make.left.equalTo(containerView).offset(20)
+            make.right.equalTo(containerView)
+        }
+        
+        currency.snp.makeConstraints { make in
+            make.top.equalTo(iban).offset(32)
+            make.left.equalTo(containerView).offset(20)
+            make.right.equalTo(containerView)
+        }
+        
+        saldo.snp.makeConstraints { make in
+            make.top.equalTo(currency).offset(32)
+            make.left.equalTo(containerView).offset(20)
+            make.right.equalTo(containerView)
+        }
+        
+        productName.snp.makeConstraints { make in
+            make.top.equalTo(saldo).offset(32)
+            make.left.equalTo(containerView).offset(20)
+            make.right.equalTo(containerView)
         }
     }
     
     func buildViewHierarchy() {
-        //self.addSubview(image)
         containerView.addSubview(iban)
+        containerView.addSubview(currency)
+        containerView.addSubview(saldo)
+        containerView.addSubview(productName)
         self.addSubview(containerView)
     }
     
@@ -73,9 +104,11 @@ extension AccountView: ViewConfiguration {
 
 extension AccountView {
     func setup(with account: AccountModel) {
-        iban.text = account.iban.isEmpty ? "---" : account.iban
-        /*if let imagePath = account.thumImage?.fullPath() {
-            image.download(image: imagePath)
-        }*/
+        iban.text = account.iban.isEmpty ? "(IBAN inexistent)" : "IBAN: \(account.iban)"
+        currency.text = account.accountCurrency.isEmpty ? "(?)" : "Currency: \(account.accountCurrency)"
+        saldo.text = "Saldo: \(account.accountBalanceInCents)"
+        if let name = account.productName {
+            productName.text = name.isEmpty ? "" : "Product name: \(name)"
+        }
     }
 }

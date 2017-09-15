@@ -33,6 +33,13 @@ struct AccountModel {
     var alias: String = ""
     var isVisible: Bool = false
     var iban: String = ""
+    
+    //optionals:
+    var linkedAccountId: Int?
+    var productName: String?
+    var productType: Int?
+    var savingsTargetReached: Int?
+    var targetAmountInCents: Int?
 }
 
 extension AccountModel: Mappable {
@@ -58,5 +65,12 @@ extension AccountModel: Mappable {
         self.alias <- map["alias"]
         self.isVisible <- map["isVisible"]
         self.iban <- map["iban"]
+        
+        //optionals:
+        self.linkedAccountId = try? map.value("linkedAccountId")
+        self.productName = try? map.value("productName")
+        self.productType = try? map.value("productType")
+        self.savingsTargetReached = try? map.value("savingsTargetReached")
+        self.targetAmountInCents = try? map.value("targetAmountInCents")
     }
 }
