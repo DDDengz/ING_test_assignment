@@ -1,14 +1,20 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '8.0'
 
-target 'INGVVL' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+def my_pods
+    pod 'SnapKit'
+    pod 'ObjectMapper'
+    pod 'Reusable'
+end
 
-  # Pods for INGVVL
-  pod 'SnapKit'
-  pod 'ObjectMapper'
-  pod 'Reusable'
+target 'INGTodayWidget' do
+    use_frameworks!
+    my_pods
+end
+
+target 'INGVVL' do
+  use_frameworks!
+  my_pods
 
   abstract_target 'Tests' do
       target "INGVVLTests"

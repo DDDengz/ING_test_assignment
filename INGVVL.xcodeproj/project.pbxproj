@@ -10,6 +10,26 @@
 		02B0C8A72120A526C4577FF9 /* Pods_INGVVL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */; };
 		042793D2EB16F8AA2703F251 /* Pods_INGVVLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */; };
 		3E87F1DF1F6B5EC2003EB2ED /* NavigationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E87F1DE1F6B5EC2003EB2ED /* NavigationItems.swift */; };
+		3E87F1E61F6B75C3003EB2ED /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E87F1E51F6B75C3003EB2ED /* NotificationCenter.framework */; };
+		3E87F1E91F6B75C3003EB2ED /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E87F1E81F6B75C3003EB2ED /* TodayViewController.swift */; };
+		3E87F1EC1F6B75C3003EB2ED /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E87F1EA1F6B75C3003EB2ED /* MainInterface.storyboard */; };
+		3E87F1F01F6B75C3003EB2ED /* INGTodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3E87F1E41F6B75C3003EB2ED /* INGTodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3E87F1F51F6B7A6C003EB2ED /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */; };
+		3E87F1F71F6B7B06003EB2ED /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF9D1F6B127600058E6E /* AccountsViewController.swift */; };
+		3E87F1F81F6B7C98003EB2ED /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797AC1F6AB0E800A70DE2 /* AccountModel.swift */; };
+		3E87F1F91F6B7CA5003EB2ED /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */; };
+		3E87F1FA1F6B7CB2003EB2ED /* AccountsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797BD1F6AC80900A70DE2 /* AccountsContainerView.swift */; };
+		3E87F1FB1F6B7CBD003EB2ED /* AccountsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797AA1F6AB0A600A70DE2 /* AccountsTableView.swift */; };
+		3E87F1FC1F6B7CD2003EB2ED /* AccountsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B51F6AB4D900A70DE2 /* AccountsDatasource.swift */; };
+		3E87F1FD1F6B7CE3003EB2ED /* ItemsTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B11F6AB41100A70DE2 /* ItemsTableViewDatasource.swift */; };
+		3E87F1FE1F6B7D1E003EB2ED /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797BB1F6AB61800A70DE2 /* ViewConfiguration.swift */; };
+		3E87F1FF1F6B7D32003EB2ED /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DFA11F6B148000058E6E /* AccountView.swift */; };
+		3E87F2001F6B7D32003EB2ED /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF9F1F6B140900058E6E /* AccountDetailsViewController.swift */; };
+		3E87F2011F6B7D32003EB2ED /* AccountRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B81F6AB54C00A70DE2 /* AccountRowView.swift */; };
+		3E87F2021F6B7D32003EB2ED /* AccountTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B41F6AB4D900A70DE2 /* AccountTableCell.swift */; };
+		3E87F2031F6B7D38003EB2ED /* AppearanceProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */; };
+		3E87F2041F6B7D38003EB2ED /* NavigationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E87F1DE1F6B5EC2003EB2ED /* NavigationItems.swift */; };
+		3E87F2051F6B7D3E003EB2ED /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EF797A31F6A95B500A70DE2 /* mock.json */; };
 		3EB8DF971F6B0C6A00058E6E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */; };
 		3EB8DF9A1F6B122400058E6E /* AppearanceProxyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */; };
 		3EB8DF9C1F6B125900058E6E /* ColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */; };
@@ -26,6 +46,7 @@
 		3EF797B91F6AB54C00A70DE2 /* AccountRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797B81F6AB54C00A70DE2 /* AccountRowView.swift */; };
 		3EF797BC1F6AB61800A70DE2 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797BB1F6AB61800A70DE2 /* ViewConfiguration.swift */; };
 		3EF797BE1F6AC80900A70DE2 /* AccountsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF797BD1F6AC80900A70DE2 /* AccountsContainerView.swift */; };
+		9435F23D40B58FF9F14C72FD /* Pods_INGTodayWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78B0E0043D01DFD598FE736 /* Pods_INGTodayWidget.framework */; };
 		C99A2DA51F699BEF002E0C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */; };
 		C99A2DAC1F699BEF002E0C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DAB1F699BEF002E0C6C /* Assets.xcassets */; };
 		C99A2DAF1F699BEF002E0C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A2DAD1F699BEF002E0C6C /* LaunchScreen.storyboard */; };
@@ -34,6 +55,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E87F1EE1F6B75C3003EB2ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C99A2D991F699BEF002E0C6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E87F1E31F6B75C3003EB2ED;
+			remoteInfo = INGTodayWidget;
+		};
 		C99A2DB61F699BEF002E0C6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C99A2D991F699BEF002E0C6C /* Project object */;
@@ -43,6 +71,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3E87F1F41F6B75C3003EB2ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E87F1F01F6B75C3003EB2ED /* INGTodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0EB0D1356C067835F4A04D15 /* Pods_INGVVL_Tests_INGVVLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVL_Tests_INGVVLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		143045DF6E73F992218A27FE /* Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL-Tests-INGVVLTests/Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +92,11 @@
 		3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.debug.xcconfig"; sourceTree = "<group>"; };
 		3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E87F1DE1F6B5EC2003EB2ED /* NavigationItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItems.swift; path = Appearance/NavigationItems.swift; sourceTree = "<group>"; };
+		3E87F1E41F6B75C3003EB2ED /* INGTodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = INGTodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E87F1E51F6B75C3003EB2ED /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3E87F1E81F6B75C3003EB2ED /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3E87F1EB1F6B75C3003EB2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3E87F1ED1F6B75C3003EB2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EB8DF961F6B0C6A00058E6E /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseModel.swift; path = Account/ResponseModel.swift; sourceTree = "<group>"; };
 		3EB8DF991F6B122400058E6E /* AppearanceProxyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppearanceProxyHelper.swift; path = Appearance/AppearanceProxyHelper.swift; sourceTree = "<group>"; };
 		3EB8DF9B1F6B125900058E6E /* ColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPallete.swift; path = Appearance/ColorPallete.swift; sourceTree = "<group>"; };
@@ -66,8 +113,11 @@
 		3EF797B81F6AB54C00A70DE2 /* AccountRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountRowView.swift; path = Account/AccountRowView.swift; sourceTree = "<group>"; };
 		3EF797BB1F6AB61800A70DE2 /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		3EF797BD1F6AC80900A70DE2 /* AccountsContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountsContainerView.swift; path = Account/AccountsContainerView.swift; sourceTree = "<group>"; };
+		663BE7F7EA7E8691E762C984 /* Pods-INGTodayWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGTodayWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGTodayWidget/Pods-INGTodayWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		72597BBAD2379C03AB1C864B /* Pods-INGTodayWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGTodayWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGTodayWidget/Pods-INGTodayWidget.release.xcconfig"; sourceTree = "<group>"; };
 		9CFEDB0A0FBD5D4020A8D4D5 /* Pods-INGVVLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVLTests/Pods-INGVVLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INGVVL.release.xcconfig"; path = "Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL.release.xcconfig"; sourceTree = "<group>"; };
+		A78B0E0043D01DFD598FE736 /* Pods_INGTodayWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGTodayWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INGVVLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99A2DA11F699BEF002E0C6C /* INGVVL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGVVL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99A2DA41F699BEF002E0C6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +131,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3E87F1E11F6B75C3003EB2ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E87F1E61F6B75C3003EB2ED /* NotificationCenter.framework in Frameworks */,
+				9435F23D40B58FF9F14C72FD /* Pods_INGTodayWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C99A2D9E1F699BEF002E0C6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,8 +166,20 @@
 				3D236CD8A04EEA6016D1F667 /* Pods_INGVVL.framework */,
 				C39A1C2B9A7EC39EF272D308 /* Pods_INGVVLTests.framework */,
 				0EB0D1356C067835F4A04D15 /* Pods_INGVVL_Tests_INGVVLTests.framework */,
+				3E87F1E51F6B75C3003EB2ED /* NotificationCenter.framework */,
+				A78B0E0043D01DFD598FE736 /* Pods_INGTodayWidget.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E87F1E71F6B75C3003EB2ED /* INGTodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3E87F1E81F6B75C3003EB2ED /* TodayViewController.swift */,
+				3E87F1EA1F6B75C3003EB2ED /* MainInterface.storyboard */,
+				3E87F1ED1F6B75C3003EB2ED /* Info.plist */,
+			);
+			path = INGTodayWidget;
 			sourceTree = "<group>";
 		};
 		3EB8DF981F6B121600058E6E /* Appearance */ = {
@@ -174,6 +245,7 @@
 			children = (
 				C99A2DA31F699BEF002E0C6C /* INGVVL */,
 				C99A2DB81F699BEF002E0C6C /* INGVVLTests */,
+				3E87F1E71F6B75C3003EB2ED /* INGTodayWidget */,
 				C99A2DA21F699BEF002E0C6C /* Products */,
 				FC0195DD40E5EF83B3FD85CD /* Pods */,
 				15AF7493C665F02547B746E1 /* Frameworks */,
@@ -185,6 +257,7 @@
 			children = (
 				C99A2DA11F699BEF002E0C6C /* INGVVL.app */,
 				C99A2DB51F699BEF002E0C6C /* INGVVLTests.xctest */,
+				3E87F1E41F6B75C3003EB2ED /* INGTodayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +298,8 @@
 				37BDCEE2EB0EB27DE425B951 /* Pods-INGVVLTests.release.xcconfig */,
 				143045DF6E73F992218A27FE /* Pods-INGVVL-Tests-INGVVLTests.debug.xcconfig */,
 				D875C0371D2B85954B85C417 /* Pods-INGVVL-Tests-INGVVLTests.release.xcconfig */,
+				663BE7F7EA7E8691E762C984 /* Pods-INGTodayWidget.debug.xcconfig */,
+				72597BBAD2379C03AB1C864B /* Pods-INGTodayWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -232,6 +307,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3E87F1E31F6B75C3003EB2ED /* INGTodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E87F1F11F6B75C3003EB2ED /* Build configuration list for PBXNativeTarget "INGTodayWidget" */;
+			buildPhases = (
+				BE63DDD7B2B3EAEA8FC7D2C1 /* [CP] Check Pods Manifest.lock */,
+				3E87F1E01F6B75C3003EB2ED /* Sources */,
+				3E87F1E11F6B75C3003EB2ED /* Frameworks */,
+				3E87F1E21F6B75C3003EB2ED /* Resources */,
+				AD72FF4D6AB3D6D6980163E6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = INGTodayWidget;
+			productName = INGTodayWidget;
+			productReference = 3E87F1E41F6B75C3003EB2ED /* INGTodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C99A2DA01F699BEF002E0C6C /* INGVVL */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C99A2DBE1F699BEF002E0C6C /* Build configuration list for PBXNativeTarget "INGVVL" */;
@@ -242,10 +336,12 @@
 				C99A2D9F1F699BEF002E0C6C /* Resources */,
 				38AD57724239904CE12F5923 /* [CP] Embed Pods Frameworks */,
 				E173D1584D4106E9C86F5E82 /* [CP] Copy Pods Resources */,
+				3E87F1F41F6B75C3003EB2ED /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3E87F1EF1F6B75C3003EB2ED /* PBXTargetDependency */,
 			);
 			name = INGVVL;
 			productName = INGVVL;
@@ -283,6 +379,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Vitor Venturin Linhalis";
 				TargetAttributes = {
+					3E87F1E31F6B75C3003EB2ED = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					C99A2DA01F699BEF002E0C6C = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Manual;
@@ -309,11 +409,21 @@
 			targets = (
 				C99A2DA01F699BEF002E0C6C /* INGVVL */,
 				C99A2DB41F699BEF002E0C6C /* INGVVLTests */,
+				3E87F1E31F6B75C3003EB2ED /* INGTodayWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3E87F1E21F6B75C3003EB2ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E87F1EC1F6B75C3003EB2ED /* MainInterface.storyboard in Resources */,
+				3E87F2051F6B7D3E003EB2ED /* mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C99A2D9F1F699BEF002E0C6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +479,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGVVL/Pods-INGVVL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD72FF4D6AB3D6D6980163E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-INGTodayWidget/Pods-INGTodayWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE63DDD7B2B3EAEA8FC7D2C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-INGTodayWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E173D1584D4106E9C86F5E82 /* [CP] Copy Pods Resources */ = {
@@ -451,6 +594,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3E87F1E01F6B75C3003EB2ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E87F1FA1F6B7CB2003EB2ED /* AccountsContainerView.swift in Sources */,
+				3E87F1E91F6B75C3003EB2ED /* TodayViewController.swift in Sources */,
+				3E87F2041F6B7D38003EB2ED /* NavigationItems.swift in Sources */,
+				3E87F2021F6B7D32003EB2ED /* AccountTableCell.swift in Sources */,
+				3E87F1F71F6B7B06003EB2ED /* AccountsViewController.swift in Sources */,
+				3E87F1FE1F6B7D1E003EB2ED /* ViewConfiguration.swift in Sources */,
+				3E87F1FF1F6B7D32003EB2ED /* AccountView.swift in Sources */,
+				3E87F2031F6B7D38003EB2ED /* AppearanceProxyHelper.swift in Sources */,
+				3E87F1F51F6B7A6C003EB2ED /* ColorPallete.swift in Sources */,
+				3E87F1F91F6B7CA5003EB2ED /* ResponseModel.swift in Sources */,
+				3E87F1F81F6B7C98003EB2ED /* AccountModel.swift in Sources */,
+				3E87F1FC1F6B7CD2003EB2ED /* AccountsDatasource.swift in Sources */,
+				3E87F1FD1F6B7CE3003EB2ED /* ItemsTableViewDatasource.swift in Sources */,
+				3E87F2011F6B7D32003EB2ED /* AccountRowView.swift in Sources */,
+				3E87F1FB1F6B7CBD003EB2ED /* AccountsTableView.swift in Sources */,
+				3E87F2001F6B7D32003EB2ED /* AccountDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C99A2D9D1F699BEF002E0C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,6 +652,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3E87F1EF1F6B75C3003EB2ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E87F1E31F6B75C3003EB2ED /* INGTodayWidget */;
+			targetProxy = 3E87F1EE1F6B75C3003EB2ED /* PBXContainerItemProxy */;
+		};
 		C99A2DB71F699BEF002E0C6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C99A2DA01F699BEF002E0C6C /* INGVVL */;
@@ -494,6 +665,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3E87F1EA1F6B75C3003EB2ED /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E87F1EB1F6B75C3003EB2ED /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C99A2DAD1F699BEF002E0C6C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,6 +684,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3E87F1F21F6B75C3003EB2ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663BE7F7EA7E8691E762C984 /* Pods-INGTodayWidget.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = INGTodayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVL.INGTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3E87F1F31F6B75C3003EB2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72597BBAD2379C03AB1C864B /* Pods-INGTodayWidget.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = INGTodayWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.vitorventurin.INGVVL.INGTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		C99A2DBC1F699BEF002E0C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -606,7 +813,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A21D4E4F019F3CC8F1A2C94 /* Pods-INGVVL.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVL/Info.plist;
@@ -623,7 +830,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A720CEB17638E58AD829E76D /* Pods-INGVVL.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = INGVVL/Info.plist;
@@ -673,6 +880,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3E87F1F11F6B75C3003EB2ED /* Build configuration list for PBXNativeTarget "INGTodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E87F1F21F6B75C3003EB2ED /* Debug */,
+				3E87F1F31F6B75C3003EB2ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C99A2D9C1F699BEF002E0C6C /* Build configuration list for PBXProject "INGVVL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
