@@ -10,12 +10,7 @@ import UIKit
 import SnapKit
 
 class AccountRowView: UIView {
-    /*var imageThumb: UIImageView = {
-        let img = UIImageView(frame: .zero)
-        return img
-    }()*/
-    
-    var name: UILabel = {
+    var number: UILabel = {
         let lb = UILabel(frame: .zero)
         lb.textColor = ColorPalette.clean
         return lb
@@ -40,14 +35,7 @@ class AccountRowView: UIView {
 
 extension AccountRowView: ViewConfiguration {
     func setupConstraints() {
-        /*imageThumb.snp.makeConstraints { make in
-            make.top.equalTo(self)
-            make.left.equalTo(self)
-            make.bottom.equalTo(self)
-            make.width.equalTo(self.snp.height)
-        }*/
-        
-        name.snp.makeConstraints { make in
+        number.snp.makeConstraints { make in
             make.top.equalTo(self).offset(15)
             make.left.equalTo(self).offset(15)
             make.right.equalTo(self).offset(-15)
@@ -55,7 +43,7 @@ extension AccountRowView: ViewConfiguration {
         }
         
         iban.snp.makeConstraints { make in
-            make.top.equalTo(name.snp.bottom).offset(8)
+            make.top.equalTo(number.snp.bottom).offset(8)
             make.left.equalTo(self).offset(15)
             make.right.equalTo(self).offset(-15)
             make.bottom.equalTo(self).offset(-15)
@@ -63,8 +51,7 @@ extension AccountRowView: ViewConfiguration {
     }
     
     func buildViewHierarchy() {
-        //self.addSubview(imageThumb)
-        self.addSubview(name)
+        self.addSubview(number)
         self.addSubview(iban)
     }
 }

@@ -27,12 +27,8 @@ final class AccountTableCell: UITableViewCell {
     
     
     func setup(item: AccountModel) {
-        accountRow.name.text = item.accountNumber
-        accountRow.iban.text = item.iban//.isEmpty ? "No description" : item.bio
-        //if let imagePath = item.thumImage?.fullPath() {
-        //    accountRow.imageThumb.download(image: imagePath)
-        //}
-        
+        accountRow.number.text = item.accountNumber
+        accountRow.iban.text = item.iban
     }
 }
 
@@ -55,7 +51,7 @@ extension AccountTableCell: ViewConfiguration {
     }
     
     func configureViews() {
-        accountRow.name.textColor = ColorPalette.clean
+        accountRow.number.textColor = ColorPalette.clean
         accountRow.iban.textColor = ColorPalette.cleanMedium
         self.contentView.backgroundColor = ColorPalette.dark
         self.selectionStyle = .none

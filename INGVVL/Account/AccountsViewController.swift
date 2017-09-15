@@ -14,6 +14,7 @@ protocol ItemsByCategoryProtocol {
 }
 
 class AccountsViewController: UIViewController {
+    var accounts: [AccountModel] = []
     var response: ResponseModel?
     let containerView = AccountsContainerView()
     
@@ -44,7 +45,7 @@ extension AccountsViewController : ItemsByCategoryProtocol {
         ]
     }
     
-    private func parseAccounts() {
+    func parseAccounts() {
         do {
             if let file = Bundle.main.url(forResource: "mock", withExtension: "json") {
                 let data = try Data(contentsOf: file)
@@ -63,8 +64,7 @@ extension AccountsViewController : ItemsByCategoryProtocol {
         }
     }
     
-    private func categorizeAccounts(_ response: ResponseModel, showAll: Bool) {
-        var accounts: [AccountModel] = []
+    func categorizeAccounts(_ response: ResponseModel, showAll: Bool) {
         for account in response.accounts {
             if !showAll && !account.isVisible {
                continue
