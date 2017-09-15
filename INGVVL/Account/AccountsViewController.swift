@@ -65,6 +65,7 @@ extension AccountsViewController : ItemsByCategoryProtocol {
     }
     
     func categorizeAccounts(_ response: ResponseModel, showAll: Bool) {
+        self.accounts = []
         for account in response.accounts {
             if !showAll && !account.isVisible {
                continue
