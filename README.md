@@ -4,7 +4,6 @@ iOS test assignment for ING bank
 
 ### What is this repository for? ###
 
-Assignment:
 1. Create an universal iOS App that shows a list of accounts.
 2. There are two versions of this list that is displayed: complete list and the list of only visible
 accounts. How you choose to display/switch between these two versions is entirely your own.
